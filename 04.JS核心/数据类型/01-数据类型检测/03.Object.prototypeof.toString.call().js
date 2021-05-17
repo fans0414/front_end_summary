@@ -1,0 +1,13 @@
+console.log(Object.prototype.toString({}));
+console.log(Object.prototype.toString.call({}));
+console.log(Object.prototype.toString.call(1));
+console.log(Object.prototype.toString.call("1"));
+console.log(Object.prototype.toString.call(true));
+console.log(Object.prototype.toString.call(undefined));
+console.log(Object.prototype.toString.call(null));
+console.log(Object.prototype.toString.call(function(){}));
+console.log(Object.prototype.toString.call(/123/g));
+console.log(Object.prototype.toString.call(new Date()));
+console.log(Object.prototype.toString.call([]));
+console.log(Object.prototype.toString.call(document));
+console.log(Object.prototype.toString.call(window));

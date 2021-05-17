@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">点击一下</button>
+    <script>
+        var btn = document.querySelector('#btn')
+        function init() {
+            btn.addEventListener('click', () => {
+                console.log("箭头函数中的this", this);
+            })
+            btn.addEventListener('click', function () {
+                console.log("普通函数中的this", this);
+            })
+        }
+        var view = {
+            name:'view controller',
+            init
+        }
+        view.init();
+    </script>
+</body>
+
+</html>
